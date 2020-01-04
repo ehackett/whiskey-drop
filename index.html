@@ -22,17 +22,26 @@
                 <li class="active nav-item mr-2">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="active nav-item mr-2">
+                <li class="nav-item mr-2">
                     <a class="nav-link" href="/about">About</a>
                 </li>
-                <li class="active nav-item mr-2 d-block d-sm-none">
-                    <button class="btn btn-outline-success">Sign In / Sign Up</button>
+                <li class="nav-item mr-2 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="whiskeyDropdownToggleLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskeys</a>
+                    <div class="dropdown-menu" aria-labelledby="whiskeyDropdownToggleLink">
+                        <a href="#" class="dropdown-item">Irish</a>
+                        <a href="#" class="dropdown-item">American</a>
+                        <a href="#" class="dropdown-item">Scotch</a>
+                        <a href="#" class="dropdown-item">Japanese</a>
+                    </div>
+                </li>
+                <li class="active nav-item mr-2 d-inline-block d-sm-none">
+                    <button class="btn btn-success">Sign In</button>
                 </li>
 
             </ul>
             <div>
-                <p class="navbar-text my-auto mr-2 d-none d-md-inline-block"><i>Great Whiskey delivered to your door!</i></p>
-                <button class="btn btn-outline-success d-none d-sm-inline">Sign In / Sign Up</button>
+                <p class="navbar-text my-auto mr-2 d-none d-lg-inline-block"><i>Great Whiskey delivered to your door!</i></p>
+                <button class="btn btn-success d-none d-sm-inline-block">Sign In</button>
             </div>
         </div>
     </nav>
