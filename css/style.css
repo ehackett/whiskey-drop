@@ -22,4 +22,30 @@ body {
 
 .favs-container {}
 
-.jumbotron-header {}
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: tomato;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron .lead {
+    color: white;
+    margin: 25px 0;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
