@@ -14,41 +14,43 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand">Whiskey Drop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtoggle" aria-controls="#navtoggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navtoggle">
+    <div class="container-fluid navalert-container">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="/" class="navbar-brand">Whiskey Drop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtoggle" aria-controls="#navtoggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navtoggle">
 
-            <ul class="navbar-nav mr-auto">
-                <li class="active nav-item mr-2">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item mr-2">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item mr-2 dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="whiskeyDropdownToggleLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskeys</a>
-                    <div class="dropdown-menu" aria-labelledby="whiskeyDropdownToggleLink">
-                        <a href="#" class="dropdown-item">Irish</a>
-                        <a href="#" class="dropdown-item">American</a>
-                        <a href="#" class="dropdown-item">Scotch</a>
-                        <a href="#" class="dropdown-item">Japanese</a>
-                        <a href="#favs" class="dropdown-item">Monthly Favorites</a>
-                    </div>
-                </li>
-                <li class="active nav-item mr-2 d-inline-block d-sm-none">
-                    <button class="btn btn-success" data-toggle="modal" data-target="#signInModal">Sign In</button>
-                </li>
+                <ul class="navbar-nav mr-auto">
+                    <li class="active nav-item mr-2">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item mr-2 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="whiskeyDropdownToggleLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskeys</a>
+                        <div class="dropdown-menu" aria-labelledby="whiskeyDropdownToggleLink">
+                            <a href="#" class="dropdown-item">Irish</a>
+                            <a href="#" class="dropdown-item">American</a>
+                            <a href="#" class="dropdown-item">Scotch</a>
+                            <a href="#" class="dropdown-item">Japanese</a>
+                            <a href="#favs" class="dropdown-item">Monthly Favorites</a>
+                        </div>
+                    </li>
+                    <li class="active nav-item mr-2 d-inline-block d-sm-none">
+                        <button class="btn btn--cta btn--red btn--small" data-toggle="modal" data-target="#signInModal">Sign In</button>
+                    </li>
 
-            </ul>
-            <div>
-                <p class="navbar-text my-auto mr-2 d-none d-lg-inline-block"><i>Great Whiskey delivered to your door!</i></p>
-                <button class="btn btn-success d-none d-sm-inline-block" data-toggle="modal" data-target="#signInModal">Sign In</button>
+                </ul>
+                <div>
+                    <p class="navbar-text my-auto mr-2 d-none d-lg-inline-block"><i>Great Whiskey delivered to your door!</i></p>
+                    <button class="btn btn--cta btn--red btn--small d-none d-sm-inline-block" data-toggle="modal" data-target="#signInModal">Sign In</button>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- /navbar -->
 
 
@@ -65,15 +67,16 @@
 
     <!-- callout -->
     <div class="container-fluid callout-container">
+        <div class="opaque-overlay"> </div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center mt-3">
                     <h1 class="jumbotron-header">The Finest Whiskeys delivered to your doorstep</h1>
-                    <hr class="block-divider">
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="d-none d-sm-inline">$19.99 </s>
+                    <hr class="block-divider block-divider--tomato">
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="d-none d-sm-inline">$19.99  </s>
                         <span class="d-inline d-sm-none"><br></span>
-                        <mark><strong>First one is free!</strong></mark></p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
+                        <mark><strong> First one is free!</strong></mark></p>
+                    <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
                     <p class="text-muted"><small>You must be over 18 to sign up for our service. Please drink responsibly</small></p>
                 </section>
             </div>
@@ -228,7 +231,7 @@
                             <label for="signInPassword">Password</label>
                             <input type="password" class="form-control" id="signInPassword">
                         </div>
-                        <button type="submit" class="btn btn-success">Sign In</button>
+                        <button type="submit" class="btn btn--ctn btn--red btn--small">Sign In</button>
                     </form>
                 </div>
             </div>
@@ -259,7 +262,7 @@
                             <label for="confirmPassword">Confirm Password</label>
                             <input type="password" class="form-control" id="confirmPassword">
                         </div>
-                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="submit" class="btn btn--ctn btn--red btn--small">Submit</button>
                     </form>
                 </div>
 

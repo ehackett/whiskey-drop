@@ -2,6 +2,39 @@ body {
     font-family: 'Rationale', sans-serif;
 }
 
+
+/* navbar */
+
+.navalert-container {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+
+/* containers */
+
 .alert-container {}
 
 .callout-container {
@@ -14,6 +47,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .quotes-container {}
@@ -22,12 +56,34 @@ body {
 
 .favs-container {}
 
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+
+/* block divider */
+
 .block-divider {
     width: 75px;
     height: 5px;
     border: 0;
+}
+
+.block-divider--tomato {
     background-color: tomato;
 }
+
+.block-divider--short {
+    width: 35px;
+}
+
+
+/* jumboton */
 
 .jumbotron {
     background-color: transparent;
@@ -48,4 +104,37 @@ body {
     font-size: 60%;
     font-style: italic;
     color: #d0d0d0;
+}
+
+
+/* buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: tomato;
+    border-color: tomato;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #ff6347c2;
+    border-color: #ff6347c2;
+}
+
+.btn--small {
+    width: 80px;
+}
+
+.modal-content {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
 }
