@@ -98,6 +98,7 @@ ul.navbar-nav.mr-auto {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--tomato {
@@ -163,4 +164,68 @@ ul.navbar-nav.mr-auto {
     background-color: black;
     color: white;
     border: 1px solid white;
+}
+
+.container-wrapper {}
+
+.container-wrapper--red {
+    background-color: #ff6347c2;
+    color: white;
+}
+
+.container-wrapper--white {
+    background-color: #fffefe;
+}
+
+.container-wrapper--black {
+    background-color: black;
+    color: white;
+}
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.feature {
+    text-align: center;
+    margin: 0 10px 40px 10px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-radius: 15px;
+    border-color: white;
+    min-width: 100px;
+    font-weight: bold;
+    color: #ff6347c2;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #ff6347c2;
 }
